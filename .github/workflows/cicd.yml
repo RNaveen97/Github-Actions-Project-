@@ -36,7 +36,7 @@ jobs:
 
   security-check:
     runs-on: ubuntu-latest
-    
+    needs: compile
     steps:
     - uses: actions/checkout@v4 # On the runner it will create a local copy of the repository i.e it checkout the code
     - name: Trivy installation
